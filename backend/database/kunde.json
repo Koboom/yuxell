@@ -1,0 +1,102 @@
+[[
+  "1",
+  "2",
+  "3"
+],{
+  "id": "4",
+  "fullName": "5",
+  "age": "6",
+  "eMail": "7",
+  "telNo": "8",
+  "adress": "9",
+  "origin": "10",
+  "location": "10",
+  "bookings": "11",
+  "zimmerBuchungen": "12"
+},{
+  "id": "13",
+  "fullName": "14",
+  "age": "6",
+  "eMail": "15",
+  "telNo": "16",
+  "adress": "17",
+  "origin": "10",
+  "location": "10",
+  "bookings": "18",
+  "zimmerBuchungen": "19"
+},{
+  "id": "20",
+  "fullName": "21",
+  "age": "22",
+  "eMail": "23",
+  "telNo": "24",
+  "adress": "25",
+  "origin": "10",
+  "location": "10",
+  "bookings": "26",
+  "zimmerBuchungen": "27"
+},"15fb204b-401f-40f7-9728-43961e09e110","Mehmet Yüksel Koyunoglu","47","nykoyunoglu@mail.com","017811051976","Bielefeld Brackwede","Bielefeld",[
+  "28"
+],[
+  "29"
+],"08ae8c34-b744-44b1-8b79-2f8f3613c34c","Seref Demir","seref@mail.com","017811051980","Bielefeld Senne",[
+  "30"
+],[
+  "31"
+],"ded43aaa-9a13-45bb-99fb-f42e2e35c0bf","Veli Özer","51","veli@mail.com","017811051971","Bielefeld Windelsbleicher",[
+  "32"
+],[
+  "33"
+],{
+  "driver": "34",
+  "kunde": "1",
+  "origin": "10",
+  "destination": "35"
+},{
+  "hotel": "36",
+  "restaurant": "37",
+  "kunde": "1",
+  "anfangsDatum": "38",
+  "endDatum": "39"
+},{
+  "driver": "34",
+  "kunde": "2",
+  "origin": "10",
+  "destination": "35"
+},{
+  "hotel": "36",
+  "restaurant": "37",
+  "kunde": "2",
+  "anfangsDatum": "38",
+  "endDatum": "39"
+},{
+  "driver": "34",
+  "kunde": "3",
+  "origin": "10",
+  "destination": "35"
+},{
+  "hotel": "36",
+  "restaurant": "37",
+  "kunde": "3",
+  "anfangsDatum": "38",
+  "endDatum": "39"
+},{
+  "id": "40",
+  "name": "41",
+  "location": "10"
+},"Köln",{
+  "name": "42",
+  "location": "35",
+  "zimmer": "43"
+},{
+  "name": "44",
+  "breakfast": "45",
+  "dinner": "45",
+  "bar": "46"
+},"30.12.2023","10.01.2024","cfeb9ceb-7e65-4689-b518-de045ac9de82","Stefan","Hotel Kölner Dom",{
+  "zimmer1": "45",
+  "zimmer2": "46",
+  "zimmer3": "46",
+  "zimmer4": "46",
+  "zimmer5": "46"
+},"Kölner Dom Restaurant","yes","no"]
