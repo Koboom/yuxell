@@ -11,7 +11,7 @@ const KundeSchema = new mongoose.Schema({
         ref: "Booking",
         autopopulate: { maxDepth: 2 }
     }],
-    hotelBookings: [{ // eklenecekler var
+    hotelBookings: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "HotelBooking",
         autopopulate: { maxDepth: 2 }

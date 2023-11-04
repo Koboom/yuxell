@@ -5,7 +5,12 @@ const cors = require("cors")
 const kundenRouter = require("./routes/kunden")
 const driversRouter = require("./routes/drivers")
 const bookingsRouter = require("./routes/bookings")
+const hotelRouter = require("./routes/hotele")
+const hotelBookingsRouter = require("./routes/hotelBookings")
+const zimmernRouter = require("./routes/zimmern")
+const rufZimmernRouter = require("./routes/rufZimmern")
 const indexRouter = require("./routes/index")
+
 require("./mongo-connection")
 
 
@@ -18,9 +23,14 @@ app.set("view engine", "pug")
 app.use("/kunden", kundenRouter)
 app.use("/drivers", driversRouter)
 app.use("/bookings", bookingsRouter)
+app.use("/hotel", hotelRouter)
+app.use("/hotelBookings", hotelBookingsRouter)
+app.use("/zimmern", zimmernRouter)
+app.use("/rufZimmern", rufZimmernRouter)
 app.use("/", indexRouter)
 
 app.listen(3000, () =>{
     console.log("started listening on 3000")
 })
+
 module.exports = app

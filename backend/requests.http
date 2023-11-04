@@ -1,0 +1,50 @@
+POST http://localhost:3000/kunden HTTP/1.1
+content-type: application/json
+
+{"name":"Nilgün Türkmen",
+ "age":"46",
+ "eMail":"nil@gmail.com",
+ "telNo":"017811051977",
+ "location":"Bielefeld"
+ }
+
+###
+POST http://localhost:3000/kunden/654248735ce1d684e70e00b9/bookings HTTP/1.1
+content-type: application/json
+
+{ "driverId": "6542594739b7180ebc763ad0", "origin":"Köln","destination":"Bielefeld"}
+
+###
+POST http://localhost:3000/drivers HTTP/1.1
+content-type: application/json
+
+{"name":"Yasin Koyunoglu", "location":"Bielefeld Brackwede", "age":"18"}
+
+###
+
+POST http://localhost:3000/zimmern HTTP/1.1
+content-type: application/json
+
+{ "etage":"2","no":"10","zimmerTelNo":"3010"}
+
+###
+POST http://localhost:3000/hotel HTTP/1.1
+content-type: application/json
+
+{"name": "Nilgün's Ecke", "zimmerZahl":"5", "eMail":"nilgün@gmail.com","stern":"3", "telNo":"017829121977", "location":"Bielefeld Brackwede"}
+
+###
+POST http://localhost:3000/hotel/rufZimmern HTTP/1.1
+content-type: application/json
+
+###
+GET http://localhost:3000/hotel/6542588f8da69ee233966981 HTTP/1.1
+
+###
+DELETE http://localhost:3000/hotel/65424bfab256264ca8dc66f4 HTTP/1.1
+
+###
+GET http://localhost:3000/kunden/6542164fde59dc2d0c2ae006 HTTP/1.1
+
+###
+DELETE http://localhost:3000/kunden/6542164fde59dc2d0c2ae006 HTTP/1.1

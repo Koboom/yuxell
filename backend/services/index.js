@@ -6,4 +6,6 @@ const kundeService = require("./kunde-service")
 const rufZimmerService = require("./rufZimmer-service")
 const zimmerService = require("./zimmer-service")
 
-module.exports = { bookingService, driverService, hotelService, hotelBookingService, kundeService, rufZimmerService, zimmerService}
+//buradan exports yapmazsam moduller compass da görünmez
+
+module.exports = { bookingService, driverService, kundeService, hotelService, hotelBookingService, rufZimmerService, zimmerService}
