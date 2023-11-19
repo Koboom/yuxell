@@ -1,12 +1,18 @@
-<script setup>
-  import HelloWorld from '../components/HelloWorld.vue';
+<script>
+import HelloWorld from "../components/HelloWorld.vue"
+
+export default {
+  name: "About",
+  components: {
+    HelloWorld
+  }
+}
 </script>
 
-<template>
-  <div class="about">
-    <h1>About Page</h1>
-    <HelloWorld msg="This is Nazilli"/>
-  </div>
+<template lang="pug">
+.about
+    h1 This is an about page <hr>
+      HelloWorld(msg="This is Nazilli")
 </template>
 
 <style>

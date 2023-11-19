@@ -1,3 +1,4 @@
+const booking = require('../models/booking')
 const { bookingService } = require('../services')
 
 const router = require('express').Router()
@@ -6,6 +7,13 @@ router.get('/', async (req, res) => {
   const bookings = await bookingService.load()
 
   res.render('bookings', { bookings })
+})
+
+router.get("/:bookingsId", async (req, res) => {
+  const bookings = await bookingService.find(req.params.bookingsId)
+
+  if(!bookings) return res.status(404)
+  res.send(bookings)
 })
 
 router.get('/search', async (req, res) => {

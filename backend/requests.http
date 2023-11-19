@@ -1,11 +1,11 @@
 POST http://localhost:3000/kunden HTTP/1.1
 content-type: application/json
 
-{"name":"Nilgün Türkmen",
- "age":"46",
- "eMail":"nil@gmail.com",
- "telNo":"017811051977",
- "location":"Bielefeld"
+{"name":"Ali Koyunoglu",
+ "age":"48",
+ "eMail":"ali@gmail.com",
+ "telNo":"017811051975",
+ "location":"Nazilli"
  }
 
 ###
@@ -18,7 +18,7 @@ content-type: application/json
 POST http://localhost:3000/drivers HTTP/1.1
 content-type: application/json
 
-{"name":"Yasin Koyunoglu", "location":"Bielefeld Brackwede", "age":"18"}
+{"name":"Tunahan Koyunoglu", "location":"Bielefeld Senne", "age":"18"}
 
 ###
 
