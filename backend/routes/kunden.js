@@ -6,19 +6,11 @@ router.get('/', async (req, res) => {
   res.send(await kundeService.load())
 })
 
-router.post('/', async (req, res, next) => {
-  try {
-    const kunde = await kundeService.insert(req.body)
-    res.send(kunde)
-  } catch(e) {
-    next(e)
-  }
-})
-
 router.delete('/:kundeId', async (req, res) => {
   await kundeService.removeBy('_id', req.params.kundeId)
 
   res.send('OK')
+  // res.send(kunde)
 })
 
 router.get('/:kundeId', async (req, res) => {
@@ -44,6 +36,15 @@ router.patch('/:kundeId', async (req, res) => {
   const { name } = req.body
 
   await kundeService.update(kundeId, { name })
+})
+
+router.post('/', async (req, res, next) => {
+  try {
+    const kunde = await kundeService.insert(req.body)
+    res.send(kunde)
+  } catch(e) {
+    next(e)
+  }
 })
 
 module.exports = router

@@ -1,11 +1,12 @@
 POST http://localhost:3000/kunden HTTP/1.1
 content-type: application/json
 
-{"name":"Ali Koyunoglu",
- "age":"48",
- "eMail":"ali@gmail.com",
- "telNo":"017811051975",
- "location":"Nazilli"
+{"name":"Yağmur Atılgan",
+ "age":"25",
+ "adresse":"Batıkent Caddesi Konak 06900 Ankara",
+ "eMail":"yagmur@gmail.com",
+ "telNo":"017811051984",
+ "location":"Ankara"
  }
 
 ###
@@ -18,7 +19,7 @@ content-type: application/json
 POST http://localhost:3000/drivers HTTP/1.1
 content-type: application/json
 
-{"name":"Tunahan Koyunoglu", "location":"Bielefeld Senne", "age":"18"}
+{"name":"Balu", "location":"Bielefeld Brackwede", "age":"28"}
 
 ###
 
@@ -47,4 +48,4 @@ DELETE http://localhost:3000/hotel/65424bfab256264ca8dc66f4 HTTP/1.1
 GET http://localhost:3000/kunden/6542164fde59dc2d0c2ae006 HTTP/1.1
 
 ###
-DELETE http://localhost:3000/kunden/6542164fde59dc2d0c2ae006 HTTP/1.1
+DELETE http://localhost:3000/kunden/6560ec1849912065e5a59066 HTTP/1.1

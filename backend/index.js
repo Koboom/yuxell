@@ -29,8 +29,11 @@ app.use("/zimmern", zimmernRouter)
 app.use("/rufZimmern", rufZimmernRouter)
 app.use("/", indexRouter)
 
-app.listen(3000, () =>{
-    console.log("started listening on 3000")
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () =>{
+    console.log(`started listening on ${PORT}`)
 })
 
 module.exports = app

@@ -2,7 +2,8 @@ const mongoose = require("mongoose")
 
 const KundeSchema = new mongoose.Schema({
     name: { type: String, required: true, minlength: 2},
-    age: { type: Number, require: true, min: 18 },
+    age: { type: Number, required: true, min: 18 },
+    adresse: String,
     eMail: String,
     telNo: { type: Number, require: true, minlength: 11},
     location: String,

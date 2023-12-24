@@ -27,7 +27,8 @@ router.get('/young-drivers', async (req, res) => {
 router.get('/:driverId', async (req, res) => {
   const driver = await driverService.find(req.params.driverId)
   if (!driver) return res.status(404).send('Cannot find driver')
-  res.render('driver', { driver })
+
+  res.send(driver)
 })
 
 router.patch('/:driverId', async (req, res) => {
