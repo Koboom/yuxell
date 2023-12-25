@@ -23,12 +23,4 @@ function printZimmerBuchungHistory(kunde) {
     kunde.zimmerBuchungen.forEach(printZimmerBuchung)
 }
 
-
-module.exports = {
-    sum: (a,b) => a+b,
-    subtract: (a,b) => a-b,
-    del: (a,b) => a/b,
-    multiply: (a,b) => a*b,
-    printBookingHistory
-}
-
+module.exports = printBookingHistory
