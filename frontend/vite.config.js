@@ -10,6 +10,13 @@ export default defineConfig({
     vue(),
     vueJsx(),
   ],
+  server: {
+    host:true,
+    port:7070,
+    watch: {
+      usePolling: true
+    }
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
