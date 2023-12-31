@@ -1,0 +1,87 @@
+@startuml
+
+class Kunde <<Models>> {
+    + name: String
+    + age: Number
+    + adresse: String
+    + eMail: String
+    + telNo: Number
+    + location: String
+    + Bookings(): [Booking]
+    + HotelBookings(): [HotelBooking]
+}
+
+class Bookings <<Models>> {
+    + Driver()
+    + Kunde()
+    + origin: String
+    + destination: String
+}
+
+class HotelBookings <<Models>> {
+    + Hotel()
+    + Kunde()
+    + anfangsDatum
+    + endDatum
+}
+
+class Hotel <<Models>> {
+    + name: String
+    + zimmerZahl:Number
+    + eMail: String
+    + stern: Number
+    + telNo: Number
+    + location: String
+    + rufZimmer(): [RufZimmer]
+    + callPersonal(): [CallPersonal]
+}
+
+class Driver <<Models>> {
+    + name: String
+    + location: String
+    + age: Number
+}
+
+class RufZimmer <<Models>> {
+    + Zimmer()
+    + Hotel()
+    + startDate
+    + endDate
+}
+
+class CallPersonal <<Models>> {
+    + name: String
+    + department: String
+    + age: Number
+    + adresse: String
+    + eMail: String
+    + telNo: Number
+    + originInHotel: String
+    + destinationInHotel: String
+    + BookingsFreeTime(): [BookingFreeTime]
+}
+
+class Zimmer <<Models>> {
+    + etage: Number
+    + no: Number
+    + zimmerTelNo: Number
+}
+
+class BookingsFreeTime <<Models>> {
+    + CallPersonal()
+    + startDate: String
+    + endDate: String
+}
+
+Kunde -down-> Bookings
+Kunde -down-> HotelBookings
+Bookings -down-> Driver
+HotelBookings -down-> Hotel
+Hotel -down-> RufZimmer
+Hotel -down-> CallPersonal
+RufZimmer -down-> Zimmer
+CallPersonal -down-> BookingsFreeTime
+
+' created by Yuksel
+
+@enduml

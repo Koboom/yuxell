@@ -1,14 +1,9 @@
 const mongoose = require("mongoose")
 
 const BookingFreeTimeSchema = new mongoose.Schema({
-    personal: [{
+    callpersonal: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "CallPersonal",
-        autopopulate: { maxDepth: 1 }
-    }],
-    hotel: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Hotel",
         autopopulate: { maxDepth: 1 }
     }],
     startDate: String,
