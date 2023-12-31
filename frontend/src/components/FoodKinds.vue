@@ -7,9 +7,9 @@
 <template>
     <h4>Different Kinds of Food</h4>
     <div v-for="x in foods">
-        <div class="w3-container">
+        <div class="y-container">
             <img :src="x.imgUrl" alt="" style="width: 100%;">
-            <p class="w3-center w3-margin w3-black w3-round">{{ x.name }}</p><hr>
+            <p class="y-center y-margin y-black y-round">{{ x.name }}</p><hr>
         </div>
     </div>
 </template>

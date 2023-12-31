@@ -16,7 +16,10 @@
             <RouterLink class="nav-link" to="/">Home</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/Deneme">Deneme</RouterLink>
+            <RouterLink class="nav-link" to="/deneme">Deneme</RouterLink>
+          </li>
+          <li>
+            <RouterLink class="nav-link" to="/hotele">Hotele</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" to="/kunden">Kunden</RouterLink>
@@ -29,12 +32,6 @@
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" to="/einstellung">Einstellung</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link" to="/login">Login</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link" to="/register">Register</RouterLink>
           </li>
         </ul>
       </div>

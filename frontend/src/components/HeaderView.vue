@@ -23,11 +23,11 @@
 <template>
     <div class="container-fluid p-5 bg-primary text-white text-center">
         <p v-if="isLoading">Please wait...</p>
-        <div v-else class="container mt-5"><i class="fa fa-comment w3-xxxlarge"></i></div>
-            <div class="w3-right">
+        <div v-else class="container mt-5"><i class="fa fa-comment y-xxxlarge"></i></div>
+            <div class="y-right">
                 <h3>{{ kunden.length }}</h3>
             </div>
-        <div class="w3-clear"></div>
+        <div class="y-clear"></div>
             <h4>Kunden</h4>
     </div>
 

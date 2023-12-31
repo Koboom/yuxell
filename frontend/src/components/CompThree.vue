@@ -10,7 +10,7 @@
 </script>
 
 <template>
-    <div class="w3-container w3-yellow w3-round">
+    <div class="y-container y-yellow y-round">
         <h3>Component Three</h3>
         <p>Choose e new background-color</p>
         <input type="color" v-model="bgColor">

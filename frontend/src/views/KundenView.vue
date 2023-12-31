@@ -30,7 +30,7 @@
 
 <template>
     <div class="container">
-        <div class="w3-container" >
+        <div class="y-container" >
             <h3>Add New Kunde</h3>
                 <input type="text" placeholder="name..." v-model="name" required><br>
                 <input type="text" placeholder="age..." v-model="age" required><br>
@@ -52,8 +52,8 @@
             <p>There are <span class="badge bg-danger">{{ kunden.length }}</span> kunden</p>
             <ol>
                 <li v-for="kunde in kunden" class="">
-                    <a class="w3-btn w3-hover-gray w3-round-xlarge" :href="`/kunden/${kunde._id}`">{{ kunde.name }}</a>
-                    <button @click="fetchDeleteKunde(kunde._id)" class="w3-button w3-black w3-round-large">Delete</button>
+                    <a class="y-btn y-hover-gray y-round-xlarge" :href="`/kunden/${kunde._id}`">{{ kunde.name }}</a>
+                    <button @click="fetchDeleteKunde(kunde._id)" class="y-button y-black y-round-large">Delete</button>
                 </li>
             </ol>
         </div>

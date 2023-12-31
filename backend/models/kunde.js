@@ -5,7 +5,7 @@ const KundeSchema = new mongoose.Schema({
     age: { type: Number, required: true, min: 18 },
     adresse: String,
     eMail: String,
-    telNo: { type: Number, require: true, minlength: 11},
+    telNo: { type: Number, required: true, minlength: 11},
     location: String,
     bookings: [{ // bitti
         type: mongoose.Schema.Types.ObjectId,

@@ -30,31 +30,34 @@
             this.addDie()
             this.addDie()
             this.addDie()
+            this.addDie()
+            this.addDie()
+
         }
     }
 </script>
 <template>
-    <div class="w3-container ">
+    <div class="y-container ">
 
-        <div class="w3-row w3-animate-left">
+        <div class="y-row y-animate-left">
 
-            <div class="w3-col w3-container m4 l3 w3-border w3-padding w3-light-green w3-card-4">
+            <div class="y-col y-container m4 l3 y-border y-padding y-light-green y-card-4">
                 <h2>Transition Component</h2>
-                <!-- <input type="text" v-model="inpName" @keydown.enter="addEl">
-                <button @click="addEl" class="w3-button w3-black w3-padding w3-margin">Add</button>
+                <input type="text" v-model="inpName" @keydown.enter="addEl">
+                <button @click="addEl" class="y-button y-black y-padding y-margin">Add</button>
                 <TransitionGroup tag="ol" class="">
                     <li v-for="x in product" :key="x" class="">
                         <div onclick="this.parentElement.style.display='none'" style="cursor: pointer;" class="">
                             {{ x }}
                         </div>
                     </li>
-                </TransitionGroup> -->
+                </TransitionGroup>
             </div>
 
-            <div class="w3-col w3-container m4 l3 w3-border w3-padding w3-light-green w3-card-4">
+            <div class="y-col y-container m4 l3 y-border y-padding y-light-green y-card-4">
                 <h2>TransitionGroup</h2>
-                <button @click="addDie" class="w3-button w3-black w3-round">Roll</button>
-                <button @click="removeDie" class="w3-button w3-black w3-round">Remove random</button><br>
+                <button @click="addDie" class="y-button y-black y-round">Roll</button>
+                <button @click="removeDie" class="y-button y-black y-round">Remove random</button><br>
                 <TransitionGroup>
                     <div v-for="x in dice" :key="x" class="diceDiv"  :style="{ backgroundColor: 'hsl('+x*40+', 85%, 85%)'}">
                         {{ x }}

@@ -43,7 +43,7 @@
                   <h1 class="text-success "> Kunde Details</h1>
                   <p class="text-primary">Wellcome <span class="text-danger">{{ kunde.name }}</span></p>
 
-                  <button type="button" class="btn btn-primary w3-animate-opacity" data-bs-toggle="collapse" data-bs-target="#demo">More Detail</button>
+                  <button type="button" class="btn btn-primary y-animate-opacity" data-bs-toggle="collapse" data-bs-target="#demo">More Detail</button>
                     <div id="demo" class="collapse">
                         <h2>Card Image</h2>
 
@@ -89,7 +89,7 @@
             </p>
               <div v-if="drivers.length">
             <h3 class="text-danger">Drivers ({{ drivers.length }} driver(s) wait...)</h3>
-            <ol class="w3-ul">
+            <ol class="y-ul">
                <li v-for="driver in drivers">{{ driver.name }}({{ driver.age }}) is waiting at {{ driver.location }}
                   <button class="btn badge bg-primary" @click="bookDriverAndUpdateKunde({ driverId: driver._id, kundeId: kunde._id, origin: kunde.location, destination})">
                         Book Driver

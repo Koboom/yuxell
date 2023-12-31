@@ -20,7 +20,7 @@
 </script>
 
 <template>
-    <div class="w3-container w3-margin w3-border w3-green w3-round-xlarge w3-padding-16">
+    <div class="y-container y-margin y-border y-green y-round-xlarge y-padding-16">
         <h2>Component</h2>
         <p>This is the component.</p>
         <ol ref="olEl"></ol>

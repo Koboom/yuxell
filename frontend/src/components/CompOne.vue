@@ -10,7 +10,7 @@
 </script>
 
 <template>
-    <div class="w3-container w3-blue w3-round w3-margin w3-padding" style="overflow: hidden;">
+    <div class="y-container y-blue y-round y-margin y-padding" style="overflow: hidden;">
         <img :src="imgSrc" alt="" style="width: 100px;">
         <h2>Component One</h2>
         <p>Choose food.</p>

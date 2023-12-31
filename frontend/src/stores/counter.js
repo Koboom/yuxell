@@ -26,6 +26,10 @@ export const useCounterStore = defineStore('counter', () => {
     const request = await axios.get(`/drivers/${driverId}`)
     return request.data
   }
+  async function fetchDeleteDriver(driverId) {
+    const request = await axios.delete(`/drivers/${driverId}`)
+    return request.data
+  }
   async function bookDriver( {kundeId, driverId, origin, destination} ) {
     const request = await axios.post(`/kunden/${kundeId}/bookings`, {
       driverId, origin, destination
@@ -45,5 +49,5 @@ export const useCounterStore = defineStore('counter', () => {
     return request.data
   }
 
-  return { count, doubleCount, increment, fetchKunden, fetchKunde, fetchDrivers, bookDriver , fetchDriver, fetchNewKunden, fetchNewDriver, fetchDeleteKunde }
+  return { count, doubleCount, increment, fetchKunden, fetchKunde, fetchDrivers, bookDriver , fetchDriver, fetchNewKunden, fetchNewDriver, fetchDeleteKunde, fetchDeleteDriver }
 })

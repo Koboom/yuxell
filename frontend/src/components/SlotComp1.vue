@@ -16,7 +16,7 @@
 
 <template>
     <h3>Component</h3>
-    <div class="w3-round-large w3-center">
+    <div class="y-round-large y-center">
         <slot
         v-for="x in foods"
         :key="x.name"

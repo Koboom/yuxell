@@ -13,6 +13,6 @@ services:
   mongodb:
     image: mongo:4.2
     ports:
-      - 37017:27017
+      - 47017:27017
     volumes:
       - ./data:/data/db

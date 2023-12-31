@@ -10,7 +10,7 @@
 </script>
 
 <template>
-    <div class="w3-container w3-red">
+    <div class="y-container y-red">
         <h2>Component Two</h2>
         <input type="text" v-model="msg" placeholder="write something...">
         <p>Your message</p>

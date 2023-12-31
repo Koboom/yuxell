@@ -28,13 +28,13 @@
 <template>
     <div class="container">
         <div class="driver">
-            <div class="w3-container">
+            <div class="y-container">
                 <h2>New Driver</h2>
                 <input type="text" placeholder="name..." v-model="name"><br>
                 <input type="text" placeholder="age..." v-model="age"><br>
                 <input type="text" placeholder="location..." v-model="location"><br><br>
 
-                <button class="w3-green w3-button w3-round"
+                <button class="y-green y-button y-round"
                 @click="fetchNewDriver({ name: name, age: age, location: location})"
                 >Add</button>
             </div><br>

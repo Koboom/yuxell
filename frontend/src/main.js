@@ -15,6 +15,7 @@ import FoodAbout from "./components/FoodAbout.vue"
 import FoodKinds from "./components/FoodKinds.vue"
 import TransitionGroupExercise from "./components/TransitionGroupExercise.vue"
 
+
 import App from './App.vue'
 import router from './router'
 

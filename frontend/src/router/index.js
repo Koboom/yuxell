@@ -6,9 +6,8 @@ import KundenView from "../views/KundenView.vue"
 import DriversView from "../views/DriversView.vue"
 import KundeView from "../views/KundeView.vue"
 import DriverView from "../views/DriverView.vue"
-import RegisterView from "../views/Registerview.vue"
-import LoginView from "../views/LoginView.vue"
 import DenemeView from "../views/DenemeView.vue"
+import HoteleView from "../views/HoteleView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,16 +21,6 @@ const router = createRouter({
       path:"/deneme",
       name: "Deneme",
       component: DenemeView
-    },
-    {
-      path:"/login",
-      name:"Login",
-      component: LoginView
-    },
-    {
-      path:"/register",
-      name: "Register",
-      component: RegisterView
     },
     {
       path:"/kunden",
@@ -52,6 +41,11 @@ const router = createRouter({
       path:"/drivers/:driverId",
       name: "DriverView",
       component: DriverView
+    },
+    {
+      path: "/hotele",
+      name:"HoteleView",
+      component: HoteleView
     },
     {
       path: "/about",

@@ -75,17 +75,17 @@
         <p v-show="itemName">
             <input type="number" placeholder="Ne kadar?" v-model="itemNumber" required style="cursor: pointer;">
         </p>
-        <button type="submit" class="w3-button w3-green">Ekle</button>
+        <button type="submit" class="y-button y-green">Ekle</button>
     </form>
     <br>
     <hr>
-    <div class="w3-container">
+    <div class="y-container">
         <h4>Siparişiniz: </h4>
-        <ul class="w3-ul">
+        <ul class="y-ul">
             <li v-for="x in order">
-                <div class="w3-row w3-card-4 w3-animate-left w3-padding w3-green w3-round" onclick="this.parentElement.style.display='none'" style="cursor: pointer;">
-                    <div class="w3-half">{{ x.name }}</div>
-                    <div class="w3-half">{{ x.nummer }}</div>
+                <div class="y-row y-card-4 y-animate-left y-padding y-green y-round" onclick="this.parentElement.style.display='none'" style="cursor: pointer;">
+                    <div class="y-half">{{ x.name }}</div>
+                    <div class="y-half">{{ x.nummer }}</div>
                 </div>
             </li>
         </ul>

@@ -43,8 +43,8 @@
     }
 </script>
 <template>
-    <div class="w3-row">
-        <div class="w3-col w3-container m4 l3 w3-border w3-padding w3-light-green w3-margin w3-round w3-card-4" style="overflow: hidden;">
+    <div class="y-row">
+        <div class="y-col y-container m4 l3 y-border y-padding y-light-green y-margin y-round y-card-4" style="overflow: hidden;">
             <h3>Favoriler Listesi:</h3>
             <food-item
                 v-for="x in foods"
@@ -56,26 +56,26 @@
                 @toggle-favorite="recieveEmit"
             />
         </div>
-        <div class="w3-col w3-container m4 l3 w3-border w3-light-green w3-padding w3-round w3-card-4 w3-margin">
+        <div class="y-col y-container m4 l3 y-border y-light-green y-padding y-round y-card-4 y-margin">
             <h3>Yapılacaklar Listesi: </h3>
-            <ul class="w3-ul">
+            <ul class="y-ul">
                 <todo-list
                     v-for="x in items"
                     :key="x"
                     :todo-name="x"
-                    class="w3-orange w3-round-large w3-hover-blue w3-card-4 w3-margin w3-padding"
+                    class="y-orange y-round-large y-hover-blue y-card-4 y-margin y-padding"
                 />
             </ul>
             <br>
             <input type="text" placeholder="Yeni iş ekle.." v-model="newItem" @keydown.enter="addTodo">
         </div>
 
-        <div class="w3-col w3-container m4 l3 w3-border w3-light-green w3-padding w3-round w3-card-4 w3-margin">
+        <div class="y-col y-container m4 l3 y-border y-light-green y-padding y-round y-card-4 y-margin">
             <h3>Local Component</h3>
             <comp-one/><br>
             <comp-two/>
         </div>
-        <div class="w3-col w3-container m4 l3 w3-border w3-light-green w3-padding w3-round w3-card-4 w3-margin">
+        <div class="y-col y-container m4 l3 y-border y-light-green y-padding y-round y-card-4 y-margin">
             <h3>Slots in Vue</h3>
             <slot-comp
             v-for="x in essens"
@@ -85,10 +85,10 @@
             <p>{{ x.desc }}</p>
             </slot-comp>
         </div>
-        <div class="w3-col w3-container m4 l3 w3-border w3-light-green w3-padding w3-round w3-card-4 w3-margin" style="overflow: hidden;">
+        <div class="y-col y-container m4 l3 y-border y-light-green y-padding y-round y-card-4 y-margin" style="overflow: hidden;">
             <order-vue/>
         </div>
-        <div class="w3-col w3-container m4 l3 w3-border w3-light-green w3-padding w3-round w3-card-4 w3-margin" style="overflow: hidden;">
+        <div class="y-col y-container m4 l3 y-border y-light-green y-padding y-round y-card-4 y-margin" style="overflow: hidden;">
             <h1>app.vue</h1>
             <slot1-comp1 v-slot="food">
                 <h2>{{ food.foodName }}<img :src="food.foodUrl" alt=""></h2>

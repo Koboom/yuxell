@@ -96,46 +96,46 @@
 </script>
 
 <template>
-    <div class="w3-row w3-animate-left">
-        <div class="w3-col w3-container m4 l3 w3-border w3-padding w3-light-green w3-round w3-card-4" style="overflow: hidden;">
+    <div class="y-row y-animate-left">
+        <div class="y-col y-container m4 l3 y-border y-padding y-light-green y-round y-card-4" style="overflow: hidden;">
             <h2>Dinamik Component</h2>
             <KeepAlive>
                 <component :is="activeComp"></component>
             </KeepAlive>
-            <button class="w3-button w3-black w3-round-large w3-margin" @click="toggleValue = !toggleValue">Switch component</button>
+            <button class="y-button y-black y-round-large y-margin" @click="toggleValue = !toggleValue">Switch component</button>
         </div>
-        <div class="w3-col w3-container m4 l3 w3-border w3-padding w3-light-green w3-round w3-card-4" style="overflow: hidden;">
-            <button class="w3-button w3-black w3-round w3-margin" @click="fetchData">Fetch Data</button>
+        <div class="y-col y-container m4 l3 y-border y-padding y-light-green y-round y-card-4" style="overflow: hidden;">
+            <button class="y-button y-black y-round y-margin" @click="fetchData">Fetch Data</button>
             <div v-if="data">
                 <img :src="data.data.avatar" alt="">
                 <h2>{{ data.data.first_name + " "+data.data.last_name }}</h2>
                 <pre>{{ data.data.employment.title }}</pre>
             </div>
         </div>
-        <div class="w3-col w3-containerm4 l3 w3-border w3-padding w3-light-green w3-round w3-card-4" style="overflow: hidden;" >
+        <div class="y-col y-containerm4 l3 y-border y-padding y-light-green y-round y-card-4" style="overflow: hidden;" >
             <h3>Example</h3>
-            <button class="w3-button w3-green w3-round" @click="getValue">Get the 3th list element</button>
-            <ul class="w3-ul">
+            <button class="y-button y-green y-round" @click="getValue">Get the 3th list element</button>
+            <ul class="y-ul">
                 <li v-for="x in liTexts" ref="liEl">
                     {{ x }}
                 </li>
             </ul>
-            <pre class="w3-red w3-round">{{ thirdEl }}</pre>
+            <pre class="y-red y-round">{{ thirdEl }}</pre>
         </div>
 
-        <div class="w3-col w3-containerm4 l3 w3-border w3-padding w3-light-green w3-round w3-card-4" style="overflow: hidden;" >
-            <button class="w3-button w3-black w3-round-large w3-hover-red" @click="this.active = !this.active">{{ btnText }}</button>
+        <div class="y-col y-containerm4 l3 y-border y-padding y-light-green y-round y-card-4" style="overflow: hidden;" >
+            <button class="y-button y-black y-round-large y-hover-red" @click="this.active = !this.active">{{ btnText }}</button>
             <div>
                 <KeepAlive>
                     <deneme v-if="active"></deneme>
                 </KeepAlive>
             </div>
         </div>
-        <div class="w3-col w3-containerm4 l3 w3-border w3-padding w3-light-green w3-round w3-card-4" style="overflow: hidden;" >
+        <div class="y-col y-containerm4 l3 y-border y-padding y-light-green y-round y-card-4" style="overflow: hidden;" >
             <h1>Food</h1>
-            <div class="w3-btn w3-black w3-round w3-margin" @click="this.activeFood = 'food-about'">About</div>
-            <div class="w3-btn w3-black w3-round w3-margin" @click="this.activeFood = 'food-kinds'">Kinds</div>
-            <div  class="w3-border w3-round-xlarge w3-border-black w3-padding w3-orange w3-margin">
+            <div class="y-btn y-black y-round y-margin" @click="this.activeFood = 'food-about'">About</div>
+            <div class="y-btn y-black y-round y-margin" @click="this.activeFood = 'food-kinds'">Kinds</div>
+            <div  class="y-border y-round-xlarge y-border-black y-padding y-orange y-margin">
                 <component :is="activeFood"></component>
             </div>
         </div>

@@ -1,7 +1,7 @@
 <script></script>
 
 <template>
-    <div class="w3-container w3-hover-red">
+    <div class="y-container y-hover-red">
         <slot></slot>
     </div>
 </template>
