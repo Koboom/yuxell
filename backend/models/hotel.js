@@ -12,11 +12,6 @@ const HotelSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "RufZimmer",
         autopopulate: { maxDepth: 2 }
-    }],
-    callPersonal: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "CallPersonal",
-        autopopulate: { maxDepth: 2 }
     }]
 })
 

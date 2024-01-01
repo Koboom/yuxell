@@ -32,7 +32,7 @@ content-type: application/json
 POST http://localhost:3000/hotel HTTP/1.1
 content-type: application/json
 
-{"name": "Nilgün's Ecke", "zimmerZahl":"5", "eMail":"nilgün@gmail.com","stern":"3", "telNo":"017829121977", "location":"Bielefeld Brackwede"}
+{"name": "Sude's Ecke", "zimmerZahl":"5", "eMail":"sude@gmail.com","stern":"3", "telNo":"017829122004", "location":"Bielefeld Brackwede"}
 
 ###
 POST http://localhost:3000/hotel/rufZimmern HTTP/1.1

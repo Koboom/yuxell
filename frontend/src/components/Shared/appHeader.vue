@@ -12,12 +12,12 @@
 
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <RouterLink class="nav-link" to="/">Home</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" to="/deneme">Deneme</RouterLink>
-          </li>
+          </li> -->
           <li>
             <RouterLink class="nav-link" to="/hotele">Hotele</RouterLink>
           </li>
@@ -27,12 +27,12 @@
           <li class="nav-item">
             <RouterLink class="nav-link" to="/drivers">Drivers</RouterLink>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <RouterLink class="nav-link" to="/about">About</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" to="/einstellung">Einstellung</RouterLink>
-          </li>
+          </li> -->
         </ul>
       </div>
 

@@ -14,6 +14,10 @@ export const useCounterStore = defineStore('counter', () => {
     const request = await axios.get("/kunden")
     return request.data
   }
+  async function fetchHotele() {
+    const request = await axios.get("/hotele")
+    return request.data
+  }
   async function fetchKunde(kundeId) {
     const request = await axios.get(`/kunden/${kundeId}`)
     return request.data
@@ -49,5 +53,19 @@ export const useCounterStore = defineStore('counter', () => {
     return request.data
   }
 
-  return { count, doubleCount, increment, fetchKunden, fetchKunde, fetchDrivers, bookDriver , fetchDriver, fetchNewKunden, fetchNewDriver, fetchDeleteKunde, fetchDeleteDriver }
+  return {
+    count,
+    doubleCount,
+    increment,
+    fetchKunden,
+    fetchKunde,
+    fetchDrivers,
+    bookDriver ,
+    fetchDriver,
+    fetchNewKunden,
+    fetchNewDriver,
+    fetchDeleteKunde,
+    fetchDeleteDriver,
+    fetchHotele
+  }
 })

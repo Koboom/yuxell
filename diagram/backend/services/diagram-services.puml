@@ -1,0 +1,70 @@
+@startuml
+
+class BaseService <<Services>> {
+    + constructor(model)
+    + save(obj)
+    + load()
+    + async insert(obj)
+    + async removeBy(property, value)
+    + async uydate(id, obj)
+    + async find(id)
+    + async query(obj)
+    + async findBy(property, value)
+    - BaseService()
+}
+
+class KundeService <<Services>> {
+    + async findByName(name)
+    + async findYoungKunde()
+    - new KundeService(Kunde)
+}
+
+class DriverService <<Services>> {
+    + async findByLocation(location)
+    + async findYoungDrivers()
+    - new DriverService(Driver)
+}
+
+class BookingService <<Services>> {
+    + async findByKundeId(kundeId)
+    + async findByDriverId(driverId)
+    + async book(driverId,kundeId,origin,destination)(return booking)
+    - new BookingService(Booking)
+}
+
+class HotelService <<Services>> {
+    + async findById(name)
+    - new HotelService(Hotel)
+}
+
+class HotelBookingService <<Services>> {
+    + async findByHotelId(hotelId)
+    + async findByKundeId(kundeId)
+    + async hotelBook(hotelId,kundeId,anfangstDatum,endDatum)(return hotelBooking)
+    - new HotelBookingService(HotelBooking)
+}
+
+class RufZimmerService <<Services>> {
+    + async findByZimmerId(zimmerId)
+    + async findByHotelId(hotelId)
+    + async ruft(zimmerId, hotelId)(rufZimmer)
+    - new RufZimmerService(RufZimmer)
+}
+
+class ZimmerService <<Services>> {
+    + async findByEtage(etaga)
+    + async findByNo(no)
+    - new ZimmerService(Zimmer)
+}
+
+
+
+BaseService *--> KundeService
+BaseService *--> DriverService
+BaseService *--> BookingService
+BaseService *--> HotelService
+BaseService *--> HotelBookingService
+BaseService *--> RufZimmerService
+BaseService *--> ZimmerService
+
+@enduml
